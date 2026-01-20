@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Horizontal Crossword</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            color: #333;
+        }
+        table {
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        td {
+            width: 40px;
+            height: 40px;
+            border: 2px solid #333;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            background-color: #fff;
+        }
+        .clues {
+            margin-top: 20px;
+            text-align: left;
+            max-width: 300px;
+        }
+        .clues h2 {
+            color: #333;
+        }
+        .clue {
+            margin: 8px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Horizontal Crossword (5 Words)</h1>
+
+    <!-- Кроссвордная сетка 5x5 -->
+    <table>
+        <tr>
+            <td>H</td><td>O</td><td>U</td><td>S</td><td>E</td>
+        </tr>
+        <tr>
+            <td>H</td><td>O</td><td>R</td><td>S</td><td>E</td>
+        </tr>
+        <tr>
+            <td>H</td><td>A</td><td>P</td><td>P</td><td>Y</td>
+        </tr>
+        <tr>
+            <td>H</td><td>E</td><td>A</td><td>R</td><td>T</td>
+        </tr>
+        <tr>
+            <td>H</td><td>E</td><td>L</td><td>L</td><td>O</td>
+        </tr>
+    </table>
+
+    <!-- Подсказки -->
+    <div class="clues">
+        <h2>Clues:</h2>
+        <div class="clue">1. A place where people live → <strong>HOUSE</strong></div>
+        <div class="clue">2. A large animal used for riding → <strong>HORSE</strong></div>
+        <div class="clue">3. Feeling joy or pleasure → <strong>HAPPY</strong></div>
+        <div class="clue">4. Organ that pumps blood; symbol of love → <strong>HEART</strong></div>
+        <div class="clue">5. Common English greeting → <strong>HELLO</strong></div>
+    </div>
+</body>
+</html>
