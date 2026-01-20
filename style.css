@@ -4,17 +4,49 @@
   font-weight: normal;
   font-style: normal;
 }
-body{
+
+body {
   background-color: #D28cb4;
   margin-left: 20%;
   margin-right: 20%;
   border: 2px dotted black;
-  padding: 10px 10px 10px 10px;
+  padding: 10px;
   font-family: sans-serif;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
 }
+
 blockquote.q {
   color: #D4AF67;
   border-left: 4px solid #8B0000;
   font-style: italic;
 }
-p.quote {font-family: "Pudelinka", cursive;}
+
+p.quote {
+  font-family: "Pudelinka", cursive;
+}
+
+/* СНЕЖИНКИ */
+.snowflake {
+  position: absolute;
+  top: -20px;
+  color: #fff;
+  font-size: 1.2em;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+  user-select: none;
+  z-index: 1;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(105vh) rotate(360deg);
+  }
+}
+
+/* Генерация снежинок через :before и :after — но проще через JS.
+   Однако чисто на CSS можно сделать ограниченное число "ручных" снежинок. */
+
+/* Создадим 15 снежинок вручную через псевдоэлементы body::before и т.п. — неудобно.
+   Лучше добавить их в HTML (всего 15–20 тегов — лёгкие). */
